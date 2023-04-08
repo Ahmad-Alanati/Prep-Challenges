@@ -16,6 +16,13 @@
 
 const recursionPattern = (int1, int2) => {
     // write your code here
+    if(int1<=0){
+        return [int1];
+    }
+    let arr = recursionPattern(int1-int2,int2);
+    arr.unshift(int1);
+    arr.push(int1);
+    return arr;
 }
 // -------------------------------------------------------------------------------------------------------
 
