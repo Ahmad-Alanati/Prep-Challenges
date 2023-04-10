@@ -5,7 +5,7 @@ const {
     samePattern,
 } = require("../code-challenges/challenges-17");
 
-describe.skip("Challenge17-01", () => {
+describe("Challenge17-01", () => {
   test("Recursion-Pattern", () => {
     let Output1 = [16, 11, 6, 1, -4, 1, 6, 11, 16];
     let Output2 = [50, 41, 32, 23, 14, 5, -4, 5, 14, 23, 32, 41, 50];
