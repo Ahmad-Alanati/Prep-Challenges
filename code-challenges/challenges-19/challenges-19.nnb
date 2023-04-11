@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function encryption(s) {\n    // Write your code here\n    let len= s.length;\n    let newStr = \"\";\n    let rows = Math.floor(Math.sqrt(len));\n    let columns = Math.ceil(Math.sqrt(len));\n    for(let i =0;i<columns;i++){\n        for(let y=i;y<len;y+=columns){\n            newStr+=s[y];\n        }\n        newStr+=\" \";\n    }\n    return newStr;\n}"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function timeInWords(h, m) {\n    // Write your code here\n    let arr=['one','two','three','four','five','six','seven','eight','nine',\n'ten','eleven','twelve','thirteen','fourteen','quarter','sixteen','seventeen','eightteen','nineteen','twenty','twenty one','twenty two','twenty three','twenty four','twenty five','twenty six','twenty seven','twenty eight','twenty nine','half'];\n    if(m==0){\n        return `${arr[h-1]} o' clock`;\n    }\n    if(m<=30){\n        return m>10&&m!=15&&m!=30?`${arr[m-1]} minutes past ${arr[h-1]}`:m!=1?`${arr[m-1]} past ${arr[h-1]}`:`${arr[m-1]} minute past ${arr[h-1]}`;\n    }\n    if(m>30){\n        return m>10&&m!=45?`${arr[60-m-1]} minutes to ${arr[h]}`:`${arr[60-m-1]} to ${arr[h]}`;\n    }\n}"
             ],
             "outputs": []
         }
